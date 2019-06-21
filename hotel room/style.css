@@ -1,0 +1,59 @@
+body{
+    margin:0;
+    padding:0;
+    background-image: url("ss5.png");
+    background-size: cover; 
+    
+    
+    }
+    .container{
+       top:50%;
+       left:50%;
+       position:absolute;
+       transform:translate(-50%,-50%);
+    }
+    .card{
+       padding:60px 40px 50px 40px;
+       background:rgb(7, 7, 15);
+       border-radius:10px;
+       padding:56px;
+       opacity:0.5;
+       margin-bottom:50px;
+       color:rgb(105, 14, 14);
+    }
+    #name{
+        width:200px;
+        border:none;
+        background:transparent;
+        border-bottom:1px solid white;
+        padding:6px;
+        margin-bottom:20px;
+        color:white;
+       }
+       #button{
+         border-radius:20px;
+         padding:10px 20px;
+         background:rgb(136, 186, 233);
+          color:rgb(17, 13, 13); 
+         margin-top:20px;
+         border:none;
+         outline:none;
+         width:125px;
+       }
+       #button:hover{
+        background-color:blueviolet;
+        color:black;
+        cursor:pointer;
+      
+      }
+      a{
+        font-size:13px;
+      }
+      img
+{
+  border-radius:50px;
+  position:absolute;
+  margin-left:130px;
+  margin-top:-30px;
+}
+      

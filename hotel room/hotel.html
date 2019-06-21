@@ -1,0 +1,166 @@
+<html>
+    <head>
+    <title>home page</title>
+    </head>
+    <style>
+      body{
+        margin:0;
+        padding:0;
+      background-color: aqua;
+      
+
+      }
+      .box{
+        
+        height:40px;
+        text-align:center;
+        margin:auto;
+      }
+      .container{
+        background-color: bisque;
+        display:flex;
+        margin :auto;
+        justify-content: center;
+
+      }
+       .container header { 
+        float:left;
+        top:40%;
+        left : 72%;
+        position:abolute;
+        transform:translate(-50%,-50%);  
+        
+       
+      } 
+      #button {
+        background :url(bu5.png);
+        border-radius:20px;
+        padding:20px 40px;
+        margin-top:20px;
+         border:none;
+         outline:none;
+         width:125px;
+         text-align: center;
+       }
+       
+      #button:hover{
+        background: url(bu4.png);
+        cursor:pointer;
+
+      }
+    
+       .container rooter {
+    float:left;
+  }
+      
+
+
+  
+        
+      
+   </style>
+    <body>
+      <section class="box">
+      <h1>AVENGERS</h1></section>
+      <div class=container> 
+      
+        <div class="header">
+          <!-- <div class="rooter"> -->
+            
+              
+
+            
+            <p><b>COMFORTABLE STAYS</p></b> &nbsp;&nbsp;&nbsp;
+              Bigger,more spacious rooms,convenient locations,premium furnishings & linen.<br><br>
+              <p><b> FACILITY</p></b>&nbsp;&nbsp;&nbsp;
+              Comfortable rooms with high speed wi-fi internet,complimentary Tea,coffee.<br><br>
+              <p><b>  SAFE & SECURE</p></b>&nbsp;&nbsp;&nbsp;
+              Security guard &CCTV surveillance,Power Backup & First Aid  Kit.<br><br>
+              <p><b>  FOOD & ENTERTAINMENT</p></b>&nbsp;&nbsp;&nbsp;
+              Unlimited Buffet breakfast,24*7 in-room dining,32 inch TV with complete entertainment.<br><br>
+              
+            <h1><b>Sleep over at our place?</b><br>
+              Starting at &#8377 699 <br></h1>
+              <input type="button" value="BOOK NOW" id="button">
+
+             
+            
+            
+          </div>
+        <!-- </div> -->
+        
+        <div class ="rooter">
+       
+<div class="mySlides fade">
+
+<img src="sss1.png"  style="width:700px;height:550px; margin:center;border-radius:10px;" >
+
+
+</div>
+
+<div class="mySlides fade">
+ 
+ <img src="sss2.png" style="width:700px;height:550px;margin:centre;border-radius:10px;" >
+
+
+</div>
+
+<div class="mySlides fade">
+  <img src="sss3.png"  style="width:700px;height:550px;margin:centre;border-radius:10px;" >
+
+
+</div>
+<div class="mySlides fade">
+
+  <img src="sss4.png"  style="width:700px;height:550px;margin:centre;border-radius:10px;" >
+  
+  
+  </div>
+  <div class="mySlides fade">
+
+    <img src="sss5.png" style="width:700px;height:550px;margin:centre;border-radius:10px;" >
+    
+    
+
+        </div>
+        
+      
+    
+      </div>
+      
+    
+     </div>
+    
+
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+
+for (i = 0; i < slides.length; i++) {
+  slides[i].style.display = "none";  
+}
+slideIndex++;
+if (slideIndex > slides.length) {slideIndex = 1}    
+
+
+slides[slideIndex-1].style.display = "block";  
+
+setTimeout(showSlides, 1000); 
+}
+</script>
+
+</body>
+</html> 
+
+   
+   
+    
+
+    
+    

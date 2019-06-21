@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* {box-sizing: border-box;} */
+body {
+  margin:0;
+  padding:0;
+    
+  background-size:cover;
+ } /*font-family: Verdana, sans-serif;*/
+.mySlides {display: none;}
+
+
+.test{
+  color: #00FFFF;
+  font-size: 150px;
+  padding: 8px 12px;
+  position: absolute;
+  font-family:cursive;
+  width: 100%;
+  text-align: center;
+
+
+}
+
+.text {
+  color: #4651b3;
+  font-size: 50px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  font-family:cursive;
+  text-align: center;
+}
+
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+#button{
+         border-radius:20px;
+         padding:20px 40px;
+         background:url(bu.png);
+      
+         margin-top: 30px;
+         border:none;
+         outline:none;
+         width:125px;
+       }
+       #button:hover{
+        background:url(bu2.png);
+        
+        cursor:pointer;
+       }
+
+
+
+</style>
+</head>
+<body>
+
+
+    
+
+<div class="mySlides fade">
+
+ <h1 class="test"><i><b><em>BEYOND SPACE</em></b></i>
+ <div class="button"><input type="button" value="Home" onclick="window.location.href='home.html';" id="button">&nbsp;&nbsp;
+  <input type="button" value="Login" onclick="window.location.href='login.html';"id="button"> </div></h1>
+  
+  <img src="ss4.png" backgroung-size="cover" style="width:1300px;height:600px;" >
+  
+  <div class="text"><i><b><em></em>CHOOSE THE BEST</em></b></i></div>
+</div>
+
+<div class="mySlides fade">
+  
+    <h1 class="test"><i><b><em>BEYOND SPACE</em></b></i>
+    <div class="button"><input type="button" value="Home" onclick="window.location.href='home.html';"id="button" >&nbsp;&nbsp;
+      <input type="button" value="Login" onclick="window.location.href='login.html';" id="button"></div> </h1>
+  
+  <img src="ss2.png" backgroung-size="cover" style="width:1300px;height:600px;" >
+  
+  <div class="text"><i><b>LIVE THE BEST</b></i></div>
+</div>
+
+<div class="mySlides fade">
+  
+    <h1 class="test"><i><b><em>BEYOND SPACE</em></b></i>
+    <div class="button"><input type="button" value="Home" onclick="window.location.href='home.html';" id="button" >&nbsp;&nbsp;
+      <input type="button" value="Login" onclick="window.location.href='login.html';" id="button"></div> </h1>
+  
+  <img src="ss3.png" backgroung-size="cover" style="width:1300px;height:600px;" >
+
+  <div class="text"><i><b>BECAUSE YOU DESERVE THE BEST</b></i></div>
+</div>
+
+ 
+<br>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+ 
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+ 
+
+  slides[slideIndex-1].style.display = "block";  
+ 
+  setTimeout(showSlides, 1000); 
+}
+</script>
+
+</body>
+</html> 
